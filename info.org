@@ -1,0 +1,8 @@
+* run tests
+#+begin_src bash
+python -m pytest tests/test_main.py
+#+end_src
+* running code in dockter
+#+begin_src bash
+docker run -it --rm --name thefuck -v "$PWD":/usr/src/myapp -w /usr/src/myapp tempenv bash
+#+end_src
